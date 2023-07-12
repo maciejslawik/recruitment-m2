@@ -1,0 +1,8 @@
+<config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd'>
+    <type name='Magento\QuoteGraphQl\Model\Resolver\ShippingAddress\AvailableShippingMethods'>
+        <plugin name='Shipper_Hq_Address' type='Magento\QuoteGraphQl\Plugin\AddOriginAddress' sortOrder='10' disabled='false'  />
+    </type>
+    <type name='Magento\SalesGraphQl\Model\Formatter\Order'>
+        <plugin name='Shipper_Hq_Address_Order' type='Magento\QuoteGraphQl\Plugin\AddOriginAddress' sortOrder='10' disabled='false'  />
+    </type>
+</config>

@@ -3,3 +3,14 @@ type CustomerOrder {
     shipping_origin_address: ShipperOriginAddress @doc(description: "Address of shipper to be appended in shipper object")
 }
 
+type ShipperOriginAddress {
+    country: String
+    region: String
+    city: String
+    street: String
+    street2: String
+    zipcode: String
+    firstName: String
+    email: String
+    telephone: String
+}
